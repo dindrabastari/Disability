@@ -21,7 +21,9 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center">
 
             <ImageView
                 android:layout_width="fill_parent"
@@ -35,7 +37,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:id="@+id/vvPlayer" />
+                android:id="@+id/vvPlayer"
+                android:foregroundGravity="center"
+                android:layout_centerInParent="true" />
 
             <ImageButton
                 android:layout_width="100dp"

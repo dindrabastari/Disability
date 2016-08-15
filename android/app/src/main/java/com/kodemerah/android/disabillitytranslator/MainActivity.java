@@ -1,14 +1,13 @@
 package com.kodemerah.android.disabillitytranslator;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
+import android.media.MediaPlayer.OnInfoListener;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -116,7 +115,6 @@ public class MainActivity extends Activity {
         });
 
         translate.setOnClickListener(new View.OnClickListener() {
-            @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
             @Override
             public void onClick(View v) {
                 String kata_cari = String.valueOf(myTextView.getText());
