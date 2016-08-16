@@ -5,7 +5,6 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
-import android.media.MediaPlayer.OnInfoListener;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -123,7 +122,7 @@ public class MainActivity extends Activity {
                     replayButton.setVisibility(View.GONE);
 
                     vvPlayer.setVideoURI(Uri.parse(daftarKata.get(indexKata).getVideo()));
-                    vvPlayer.setMediaController(new android.widget.MediaController(v.getContext()));
+//                    vvPlayer.setMediaController(new android.widget.MediaController(v.getContext()));
                     vvPlayer.requestFocus();
                     vvPlayer.start();
 

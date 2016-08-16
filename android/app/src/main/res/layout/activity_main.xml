@@ -36,7 +36,6 @@
             <VideoView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
                 android:id="@+id/vvPlayer"
                 android:foregroundGravity="center"
                 android:layout_centerInParent="true" />
@@ -50,7 +49,8 @@
                 android:background="@drawable/replay"
                 android:onClick="replay"
                 tools:ignore="RtlCompat"
-                android:layout_alignStart="@id/vvPlayer" />
+                android:layout_alignStart="@id/vvPlayer"
+                android:layout_centerInParent="true" />
 
             <me.zhanghai.android.materialprogressbar.MaterialProgressBar
                 android:id="@+id/material_design_progressbar"
@@ -100,6 +100,7 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:padding="16dp"
             android:layout_weight="1"
             android:gravity="center">
 
